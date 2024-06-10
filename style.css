@@ -1,0 +1,516 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-y: hidden;/*forma de quitar la barra espaciadora de desplazo en la circunferencia vertical Y*/
+    background-color: #ffffff;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    background-color: #efefef; /* Fondo del encabezado */
+}
+
+.footer-section{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.footer-container{
+    background-color: #7eb0c4; /* Celeste claro */
+    border-radius: 5px; /* Bordes redondeados para el contenedor */
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: right; /* Centra el contenido en la sección inferior */
+    padding: 8px; /* Ajusta según sea necesario */
+    color: white; /* Color del texto en la sección inferior */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-right{
+    flex: 2;
+    font-size: 1.0rem;
+    padding: 0.5px;
+    color:white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span{
+    color: white;
+    margin-right: 5px;
+}
+
+.email-link a{
+    color:white;
+    text-decoration: none;
+    transition: text-decoration 0.5s;
+}
+
+.email-link a:hover{
+    text-decoration: underline;
+}
+
+.header-container {
+    background-color: #7eb0c4; /* Celeste claro */
+    border-radius: 5px; /* Bordes redondeados para el contenedor */
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.linea-horizontal{
+
+    flex: 1;
+    border: none;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    padding: 8px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.footer-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+#titulo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /* Alinea los elementos al principio y al final del contenedor */
+    position: relative;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 25px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: auto; /* Mantener la proporción original */
+    margin-right: 8px; /* Espaciado entre los iconos (puedes ajustar este valor) */
+}
+
+
+
+
+/* _________________________________________________________________________________ */
+
+/* Otros estilos para el resto del contenido si es necesario */
+
+.animation1-location{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+
+.containerWithAnimation{
+    height: 50vh;
+    width: -50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-right: 180px;
+}/*Location*/
+
+.tarjetaAnimation{/*Altitud*/
+    height: 150px;
+    width: 140px;
+    background-color: #efefef;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagen.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.tarjetaAnimation::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-image: conic-gradient(#7eb0c4 20deg, transparent 120deg);
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.tarjetaAnimation::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 130px;
+    background-image: url('imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    box-shadow: inset 16px 14px 20px #b3aaaa8c;
+}
+.informaciondentrodelcuadroanimado{
+    color:#7eb0c4;
+    z-index: 2;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+/* _________________________________________________________________________________ */
+
+/* 2 animation*/
+
+.animation2-location{
+    position: absolute;
+    top: 510px;
+    right: 50px;
+}
+
+.photoanimation2{
+    height: 50vh;
+    width: -50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -400px;
+    margin-right: -20px;
+}
+
+.photoanimation22{
+    height: 150px;
+    width: 140px;
+    background-color: #efefef;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Chiken.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.photoanimation22::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-image: conic-gradient( transparent 280deg,#7eb0c4 20deg);
+    animation: rotate1 3s linear infinite;
+}
+@keyframes rotate1 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.photoanimation22::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 130px;
+    background-image: url('Chiken.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    box-shadow: inset 16px 14px 20px #b3aaaa8c;
+}
+
+.informationphotoanimation23{
+    color:#7eb0c4;
+    z-index: 2;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+/*end 2 animation*/
+
+/* _________________________________________________________________________________ */
+
+/* 3 animation*/
+
+.animation3-location{
+    position: absolute;
+    top: 450px;
+    right: 25px;
+}
+
+.photoanimation3{
+    height: 50vh;
+    width: -50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -220px;
+    margin-right: 108px;
+}
+
+.photoanimation33{
+    height: 150px;
+    width: 140px;
+    background-color: #efefef;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('personalpageimage1_.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.photoanimation33::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-image: conic-gradient(#7eb0c4 20deg, transparent 120deg);
+    animation: rotate 3s linear infinite;
+}
+
+.photoanimation33::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 130px;
+    background-image: url('personalpageimage1_.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    box-shadow: inset 16px 14px 20px #b3aaaa8c;
+}
+
+.informationphotoanimation33{
+    color:#7eb0c4;
+    z-index: 2;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*end 3 animation*/
+
+/*_______________--Other information */
+
+/* _________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+.info-section {
+    background-color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top: 60px;/* Ajusta la posición desde la parte superior según sea necesario */
+    left: -295px;/* Ajusta la posición desde el lado izquierdo según sea necesario */
+    width: 115%; /* Ajusta el ancho según sea necesario */
+    height: 500px;/* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 5ms ease;/* Añade una transición para suavizar el cambio de opacidad */
+    
+}
+
+.info-container {
+    /* Ajusta el ancho máximo y el margen según sea necesario */
+    max-width: 65%; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+
+.info-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.8;
+}
+
+
+/*.info-list li {
+    margin-bottom: 10px; funcionalidad para agregar una barra desplazadora
+}*/
+
+.info-list li strong {
+    font-weight: bold; /*agregar negrilla a los subtitulos*/
+}
+
+/*clock*/
+.custom-container {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+}
+
+.clock-container {
+    padding: 10px; /* Ajustado el padding */
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20%; /* Ajustado el radio del borde */
+    /*box-shadow: 8px 7px 10px #dacece; Ajustado el tamaño de la sombra */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#date, #time {
+    margin: 1px; /* Ajustado el margen */
+    text-align: center;
+    color: #333;
+    font-size: 13px; /* Ajustado el tamaño de la fuente */
+    font-weight: bold; /* Ajustado el peso de la fuente */
+}
+
+#date {
+    font-size: italic; /* Ajustado el tamaño de la fuente */
+    color: rgba(77, 83, 90, 0.7);
+    font-size: 13; 
+}
+#time{
+    font-size: 28px;
+    color: #a8cddb;
+}
+
+.habilities{
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #7eb0c4; /* Color del texto, puedes cambiarlo a tu preferencia */
+    font-weight: bold; /* Texto en negrita */
+    text-align: left; /* Centra el texto */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+
+}
+
+.about-me{
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #7eb0c4; /* Color del texto, puedes cambiarlo a tu preferencia */
+    font-weight: bold; /* Texto en negrita */
+    text-align: left; /* Centra el texto */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+
+.Icons{
+    display:flex;
+    align-items: left;
+    opacity: 0.8;
+}
+
+.cpp-icon{
+    width: 95px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 95px; /* Mantener la proporción original */
+    margin-left: 8px; /* Espaciado entre los iconos (puedes ajustar este valor) */
+    margin-top: -21.5px;
+}
+
+.css-icon{
+    width: 50px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 60px; /* Mantener la proporción original */
+    margin-left: 8px; /* Espaciado entre los iconos (puedes ajustar este valor) */
+    margin-top: -7px;
+}
+
+.html-icon{
+    width: 75px;
+    height: 65px;
+    margin-left: 15px;
+    margin-top: -9px;
+}
+
+.java-icon{
+    width: 85px;
+    height: 75px;
+    margin-left: 4px;
+    margin-top: -18px;
+}
+
+.javascript-icon{
+    width: 75px;
+    height: 65px;
+    margin-left: 4px;
+    margin-top: -10px;
+}
+
+.python-icon{
+    width: 70px;
+    height: 65px;
+    margin-left: -400px;
+    margin-top: 68px;
+}
+
+.figma-icon{
+    width: 45px;
+    height: 55px;
+    margin-left: 25px;
+    margin-top: 75px;
+}
+
+.contact-me{
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #7eb0c4; /* Color del texto, puedes cambiarlo a tu preferencia */
+    font-weight: bold; /* Texto en negrita */
+    text-align: left; /* Centra el texto */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+
+}
+
